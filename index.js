@@ -1,20 +1,3 @@
-//This module exports getShips() that takes board as a parameter. It detects the amount of each ship type with the following conventions
-//patrolBoat = #
-//subamire = ## horizontal and vertical.
-//destroyers = ### horizontal, vertical, and L shaped in every direction.
-// . . . # #
-// . . . . #
-//----------
-// . . . # .
-// . . . # #
-//----------
-// . . . . #
-// . . . # #
-//----------
-// . . . # #
-// . . . # .
-
-
 function crawler(r,c, board, knownShips, size = 0) {
     const h = board.length;     //board height
     const w = board[0].length;  //board width
@@ -89,16 +72,4 @@ export function getShips(board) {
     console.log('patrolBoats:', patrolBoats);
     return ( [destroyers, submarines, patrolBoats] );
 }
-let board = [
-    ['.','#','#','.','#',"#"], //r = 0
-    ['.','.','#','.','.',"."], //r = 1
-    ['.','#','.','.','.',"#"], //r = 2
-    ['.','#','#','.','.',"#"], //r = 3
-    ['.','.','.','.','.',"."], //r = 4
-    ['.','#','#','.','#',"#"], //r = 5
-    ['.','#','.','.','.',"."], //r = 6
-    ['.','.','#','.','#',"."], //r = 7
-    ['.','#','#','.','.',"#"], //r = 8
-];
-getShips(board);
 
