@@ -1,5 +1,5 @@
 # battleships-challenge
-This is an exercise from an interview which I didn't complete successfully at the time and wanted to finish it.
+This is a code challenge which I didn't complete successfully at the time and wanted to finish it. I was able to resolve it after brushing up a little bit on recursion (I recommend https://www.youtube.com/watch?v=oBt53YbR9Kk by freeCodeCamp). Still maybe it's not the most elegant way.
 
 The goal is to create a function that receives a battleship game board of N x M size, with ships already layed out, and returns the amount of ships found of each type. Ships are represented by a "#" character and water is represented by a "." character.
 
